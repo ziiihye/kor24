@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- swiperis -->
+    <link rel="stylesheet" href="swiper/css/swiper.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <title>정부24</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_top">
+                <p>
+                    <img src="img/top_icon.png">
+                    이 누리집은 대한민국 공식 전자정부 누리집입니다.
+                </p>
+            </div>
+            <div class="header_middle">
+                <div class="header_middle_inner">
+                    <div class="foreigner">
+                        <a id="foreigner">
+                            For Foreigners &nbsp;
+                            <img src="icon/ico_arrow_type07.png" class="down">
+                            <img src="icon/ico_arrow_type07 (1).png" class="up">
+                        </a>
+                    </div>
+                    <div class="header_middle_inner_left">
+                        <a href="#">어린이</a>
+                    </div>
+                    <ul class="header_middle_menu">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">정부24소개</a></li>
+                        <li><a href="#">누리집 안내지도</a></li>
+                        <li>
+                            <a href="#">
+                                화면크기 
+                                <div class="zoom">
+                                    <div id="zoom_out">-</div>
+                                    <div id="zoom_per">100%</div>
+                                    <div id="zoom_in">+</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="foreigners_menu">
+                        <ul>
+                            <li><a>한국어</a></li>
+                            <li><a>ENG</a></li>
+                            <li><a>中文</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="header_bottom">
+                    <div class="header_bottom_inner">
+                        <div class="logo">
+                            <a href="#"><img src="img/img-gov-logo.png"></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="">서비스</a></li>
+                            <li><a href="">보조금24</a></li>
+                            <li><a href="">정책정보</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">MyGOV</a></li>
+                        </ul>
+                        <div class="first_btn">
+                            <a href="">
+                                <img src="img/first-ico-guide.png">
+                                <p class="first_ment">처음 오셨나요?</p>
+                                <p class="first_arrow"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav에 hover하면 보이는 메뉴 -->
+                <div class="nav_inner_box">
+                    <!-- 서비스 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-1.png">
+                                <p>서비스</p>
+                            </li>
+                            <li>
+                                <p class="nav_box_title">민원신청</p>
+                                <ul>
+                                    <li>신청·조회·발급</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="nav_box_title">서비스신청</p>
+                                <ul>
+                                    <li>원스톱/생애주기/꾸러미서비스</li>
+                                    <li>연령/대상별 서비스</li>
+                                    <li>분야별 서비스</li>
+                                    <li>기업단체 서비스</li>
+                                    <li>외국인 서비스</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="nav_box_title">간편 확인/안내</p>
+                                <ul>
+                                    <li>사실/진위확인</li>
+                                    <li>행정정보공동이용<br>(e하나로민원)</li>
+                                    <li>공공자원공유</li>
+                                    <li>돌봄시설 등 위치 찾기</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 보조금 24 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-2.png">
+                                <p style="width: 100%;">보조금24</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>보조금24란</li>
+                                    <li>나의 혜택</li>
+                                    <li>간편 찾기</li>
+                                    <li>전체 혜택</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 정책정보 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-3.png">
+                                <p>정책정보</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>분야별 정책정보</li>
+                                    <li>정부/지자체 조직도</li>
+                                    <li>정부/지자체 운영누리집</li>
+                                    <li>행정기관위원회</li>
+                                    <li>지자체소식</li>
+                                    <li>공모전</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 고객센터 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-4.png">
+                                <p style="width: 100%;">고객센터</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>정부24 이용방법</li>
+                                    <li>공지사항</li>
+                                    <li>자료실</li>
+                                    <li>서비스지원</li>
+                                    <li>자주묻는질문(FAQ)</li>
+                                    <li>상담예약</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- MyGOV -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-5.png">
+                                <p style="width: 100%;">MyGOV</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>나의 서비스</li>
+                                    <li>전자문서지갑</li>
+                                    <li>나의 생활정보</li>
+                                    <li>나의 상담</li>
+                                    <li>나의 회원정보</li>
+                                    <li>나의 인증관리</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="content">
+            <div class="main_top">
+                <div class="main_top_box">
+                    <div class="main_top_box_left">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/main_slide1.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main_slide2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main_slide3.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/main_slide4.png">
+                                </div>
+                            </div>
+                            <div class="main_slide_btn_box">
+                                <div class="swiper-pagination"></div>
+                                <div class="slide_prev"><img src="icon/ico-swiper-prev.png"></div>
+                                <div class="slide_stop">
+                                    <img src="icon/ico-swiper-stop.png" class="swiper_stop">
+                                    <img src="icon/ico-swiper-play.png"class="swiper_play">
+                                </div>
+                                <div class="slide_next"><img src="icon/ico-swiper-next.png"></div>
+                            </div>
+                        </div>
+                        <div class="main_top_left_btm"></div>
+                    </div>
+                    <div class="main_top_box_right"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js" defer="defer"></script>
+    <script src="swiper/js/swiper.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+</body>
+</html>
