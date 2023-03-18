@@ -50,10 +50,10 @@ header{
 .down,.up{
     position: absolute;
     top: 10px;
+    right: 13px;
 }
 .up{
     display: none;
-    right: 13px;
     transform:rotate(180deg);
 }
 .header_middle_inner_left{
@@ -280,6 +280,7 @@ nav{
 .nav_box>ul>li>ul>li:hover{
     color: #006ae2;
 }
+/* 메인 시작 */
 .content{
     position: relative;
     width: 100%;
@@ -300,27 +301,13 @@ nav{
     width: 840px;
     margin-left: 0px;
 }
+/* 슬라이드 시작 */
 .swiper-container{
     width: 100%;
     height: 310px;
     background-color: #ddd;
     border-radius: 20px;
     position: relative;
-}
-.main_top_left_btm{
-    margin-top: 30px;
-    width: 100%;
-    height: 64px;
-    background-color: #ddd;
-}
-.main_top_box_right{
-    width: 400px;
-    height: 400px;
-    margin-right: 0px;
-    background-color: #fff;
-    border: 1px solid #e2e5eb;
-    border-radius: 20px;
-    box-shadow: 10px 10px 27px rgba(0, 0, 0, 0.06);
 }
 .main_slide_btn_box{
     z-index: 99;
@@ -368,3 +355,291 @@ nav{
 .swiper_play{
     display: none;
 }
+/* 검색 box */
+.main_top_left_btm{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+}
+.search_text{
+    width: 120px;
+    font-size: 16px;
+    line-height: 64px;   
+}
+.search_list{
+    position: relative;
+    width: 150px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+.search_list_box{
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    top: 15px;
+}
+.search_list_boxs{
+    line-height: 34px;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+}
+.search_btn{
+    position: absolute;
+    height: 30px;
+    top: 20px;
+    right: 0px;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 1;
+}
+#search_up,#search_down{
+    cursor: pointer;
+    margin-top: 5px;
+}
+#search_up{
+    display: none;
+}
+.search_line{
+    position: absolute;
+    bottom: 10px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+/* 실시간 검색창 누르면 나오는 창 */
+.hidden_search_list{
+    position: absolute;
+    border-radius: 7px;
+    top: 64px;
+    left: 120px;
+    width: 125px;
+    padding: 20px 12px;
+    border: 1px solid #e2e5eb;
+    background-color: #fff;
+    z-index: 9999;
+    display: none;
+}
+.hidden_search_list ul li{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.hidden_search_list ul li a:hover{
+    text-decoration: underline;
+}
+/* 검색창 */
+.search_box{
+    width: 540px;
+    height: 64px;
+    border: 2px solid #3382e9;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.search_input{
+    border: none;
+    width: 100%;
+    height: 62px;
+    font-size: 16px;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+.search_img{
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+/* 로그인 */
+.main_top_box_right{
+    width: 400px;
+    height: 400px;
+    margin-right: 0px;
+    background-color: #fff;
+    border: 1px solid #e2e5eb;
+    border-radius: 20px;
+    box-shadow: 10px 10px 27px rgba(0, 0, 0, 0.06);
+}
+.top_box_right_login_img{
+    padding-top: 60px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.login_ment{
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.log_btn{
+    margin-top: 30px;
+    background-color: #3382e9;
+    text-align: center;
+    color: #fff;
+    height: 52px;
+    font-size: 15px;
+    border-radius: 8px;
+    line-height: 52px;
+    margin: 40px 26px 0px 26px;
+    cursor: pointer;
+}
+.login_btm{
+    margin: 25px 26px 0px 26px;
+    position: relative;
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+}
+.login_btm_left{
+    float: left;
+}
+
+.text_line{
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 10px;
+    background: #ddd; 
+}
+.login_btm_right{
+    float: right;
+}
+.login_btm::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 자주찾는 서비스 */
+.main_bottom{
+    width: 100%;
+    height: 305px;
+    background-color: #f5f7fa;
+}
+.main_bottom_inner{
+    width: 1280px;
+}
+.main_bottom_title{
+    padding-top: 26px;
+    width: 100%;
+}
+.main_bottom_title_left{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.main_bottom_title>a{
+    float: right;
+    color: #666;
+    font-size: 14px;
+}
+.main_bottom_title::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 자주찾는 서비스 슬라이드 */
+.service_slide{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+    overflow: hidden;
+}
+.service_slider_box{
+    width: 137.5px;
+    margin-right: 20px;
+}
+.service_slider_box_inner{
+    display: block;
+    padding: 0;
+    width: 136px;
+    height: 140px;
+    text-align: center;
+    border-radius: 15px;
+    background: #fff;
+}
+.circlep{
+    background: #ff3388;
+    position: relative;
+    display: inline-block;
+    margin: 24px 0 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.circleg{
+    background: #009973;
+    position: relative;
+    display: inline-block;
+    margin: 24px 0 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.circlepp{
+    background: #6839e9;
+    position: relative;
+    display: inline-block;
+    margin: 24px 0 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.inner_text{
+    font-size: 15px;
+    color: #333;
+}
+/* 자주찾는 서비스 슬라이드 슬라이드 버튼 */
+.service_btn{
+    position: absolute;
+    width: 1280px;
+    bottom: 40px;
+    height: 20px;
+}
+.service_prev_arrow{
+    position: absolute;
+    left: 0px;
+    top: -85px;
+    cursor: pointer;
+}
+.service_next_arrow{
+    position: absolute;
+    right: 0px;
+    top: -85px;
+    cursor: pointer;
+}
+.service_dot{
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+}
+.service_dot > span{
+    margin-right: 10px;
+}
+.swiper-pagination-bullet-active { 
+    width: 20px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    }
