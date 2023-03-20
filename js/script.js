@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    // // 상단 화면크기 
+    // $("#zoom_in").click(function(){
+    //     if()
+    //     $("#wrap").css("zoom",(nowZoom+i)+"%")
+    // })
+
     // 외국인 번역 슬라이드 다운
     $("#foreigner").click(function(){
         if(!$(".foreigners_menu").is(":visible")){
@@ -198,6 +204,22 @@ $(document).ready(function(){
         $(".banner_stop").css("display","block");
         $(".banner_play").css("display","none");
         return false;
+    });
+
+    // 국민소통재널 슬라이드
+
+    let channerSwiper = new Swiper ('.channer_slide_container', {
+        slidesPerView: 5,
+        spaceBetween: 1,
+        slidesPerGroup:5,
+        speed: 500,
+        autoplay:false,
+        loop: false,
+        navigation : {
+            nextEl : '.channer_next',
+            prevEl : '.channer_prev', 
+        },
+        
     });
 
 });
