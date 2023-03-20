@@ -106,8 +106,98 @@ $(document).ready(function(){
             clickable : true,
         },
     });
+    // 원스톱 서비스 슬라이드
+    let onestop = new Swiper ('.one_stop_swiper', {
+        slidesPerView: 7,
+        spaceBetween: 1,
+        slidesPerGroup:7,
+        autoplay:false,
+        loop: false,
+        navigation : {
+            nextEl : '.one_stop_next',
+            prevEl : '.one_stop_prev', 
+        },
+        pagination : { 
+            el : '.one_stop_dot',
+            clickable : true,
+        },
+    });
+    // 보조금 24 슬라이드
+    let bojo = new Swiper ('.bojo-swiper-container', {
+        autoplay:false,
+        loop: false,
+        navigation : {
+            nextEl : '.bojo_next',
+            prevEl : '.bojo_prev', 
+        },
+        pagination : { 
+            el : '.bojo_dot',
+            type:'fraction',
+        },
+    });
+
+    // 새로운 영상 슬라이드 
+    let videoSlide = new Swiper ('.newvideo_inner_container', {
+        sliderPerView:'1',
+        autoplay:false,
+        loop: false,
+        navigation: {
+
+            nextEl: '.video_next',
     
+            prevEl: '.video_prev',
+    
+          },
+    });
 
+    // 게시판 탭 
 
+    $(".tab_menu>a").click(function(){
+        let i = $(".tab_menu>a").index(this);
+        $(".tab_menu>a").eq(i).click(function(){
+            $(".board_box>ul").eq(i).css("display","block")
+            $(".board_box>ul").eq(i).siblings().css("display","none")
+            $(".tab_menu>a").eq(i).css("border-bottom","2px solid #333")
+            $(".tab_menu>a").eq(i).siblings().css("border-bottom","none")
+        })
+    })
+
+    // 배너 슬라이드
+
+    let banner = new Swiper ('.banner-container', {
+        sliderPerView:'1',
+        speed: 500,
+        crossEffect: { crossFade: true },
+        autoplay:{
+            dealy:2500,
+            autoplayDisableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+
+            nextEl: '.banner_next',
+    
+            prevEl: '.banner_prev',
+    
+          },
+          pagination: {
+
+            el: '.banner_page',
+            type:'fraction',
+          },
+    });
+    $(".banner_stop").click(function(){
+        banner.autoplay.stop();
+        $(".banner_play").css("display","block");
+        $(".banner_stop").css("display","none");
+        return false;
+    });
+
+    $(".banner_play").click(function(){
+        banner.autoplay.start();
+        $(".banner_stop").css("display","block");
+        $(".banner_play").css("display","none");
+        return false;
+    });
 
 });
