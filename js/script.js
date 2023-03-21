@@ -1,10 +1,38 @@
 $(document).ready(function(){
 
-    // // 상단 화면크기 
-    // $("#zoom_in").click(function(){
-    //     if()
-    //     $("#wrap").css("zoom",(nowZoom+i)+"%")
-    // })
+    let currentZoom = 1; 
+    let percentZoom = 100;
+    $('#zoom_in').click(function() { 
+        if(currentZoom.toFixed(2)!=1.20){
+            currentZoom += 0.05; 
+            percentZoom += 5;
+        $('#wrap').css({ zoom: currentZoom, '-moz-transform': 'scale(' + currentZoom + ')' });
+        $("#zoom_per>p").remove()
+        $("#zoom_per").prepend("<p>"+percentZoom+"%</p>") 
+        }else{
+            alert("더 이상 확대 할수 없습니다.")
+            return false;
+        }
+        
+    });
+    $('#zoom_out').click(function() { 
+        if(currentZoom.toFixed(2)!=0.90){
+            currentZoom -= 0.05; 
+            percentZoom -= 5;
+        $('#wrap').css({ zoom: currentZoom, '-moz-transform': 'scale(' + currentZoom + ')' });
+        $("#zoom_per>p").remove()
+        $("#zoom_per").prepend("<p>"+percentZoom+"%</p>") 
+        }else{
+            alert("더 이상 축소 할수 없습니다.")
+            return false;
+        }
+    });
+
+    $('#zoom_per').click(function() {
+        $('#wrap').css({ zoom: 1, '-moz-transform': 'scale(' + 1 + ')' });
+        $("#zoom_per>p").remove()
+        $("#zoom_per").prepend("<p>100%</p>") 
+    });
 
     // 외국인 번역 슬라이드 다운
     $("#foreigner").click(function(){

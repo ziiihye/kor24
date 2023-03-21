@@ -110,6 +110,9 @@ header{
     color: #fff;
     font-size: 12px;
 }
+#zoom_per>p{
+    color: #fff !important;
+}
 /* foreigners 누르면 나오는 메뉴 */
 .foreigners_menu{
     z-index: 9999;
@@ -1423,4 +1426,279 @@ footer{
 }
 .rhkrlqn>img{
     width: 100%;
+}
+
+/* service.html */
+.service_section{
+    width: 100%;
+    position: relative;
+    top: 75px;
+}
+/* 상단 네비게이션 */
+.service_content_top{
+    width: 100%;
+    background-color: #f7f5f5;
+    border-bottom: 1px solid #ebe9e9;
+}
+.service_content_top_inner{
+    max-width: 1140px;
+    margin: 0 autos;
+}
+.service_content_top_inner>div{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 3px;
+}
+.service_content_top_navi{
+    float: right;
+}
+.service_content_top_navi>li{
+    line-height: 32px;
+    padding-top: 4px;
+    font-size: 13px;
+    float: left;
+}
+.service_content_top_navi>li:not(:first-child){
+    padding-left: 20px;
+}
+.service_content_top_navi>li>span{
+    height: 15px;
+    width: 7px;
+    background-color: #006ae2;
+    position: relative;
+}
+.service_content_top_navi>li>span>img{
+    height: 150%;
+    position: absolute;
+    top: -4px;
+    left: -1px;
+}
+/* 타이틀 */
+.service_title{
+    width: 1140px;
+    margin: 0 auto;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    position: relative;
+}
+.service_title>h1{
+    margin-top: 20px;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.service_sns{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 1.5;
+}
+.service_sns>li{
+    float: left;
+}
+.service_sns>li:not(:first-child){
+    margin-left: 3px;
+}
+.service_sns>li>a{
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+.facebook{
+    background: url(service/ico_page_util.png) no-repeat 0 0;
+}
+.twitter{
+    background: url(service/ico_page_util.png) no-repeat 0 -50px;
+}
+.linkb{
+    background: url(service/ico_page_util.png) no-repeat 0 -399px;
+}
+.print{
+    background: url(service/ico_page_util.png) no-repeat 0 -200px;
+    border: 1px solid #868686;
+    border-radius: 3px;
+}
+/* 본문 */
+.service_content{
+    margin: 0 auto;
+    width: 1140px;
+    overflow: hidden;
+    position: relative;
+}
+.service_content_inner{
+    width: 905px;
+    float: left;
+    padding-top: 20px;
+}
+.ser_con{
+    margin-left: 0px;
+    margin-right: 25px;
+    padding-bottom: 50px;
+}
+.service_form{
+    margin-bottom: 20px;
+}
+.form{
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-bottom: 1px;
+    height: 70px;
+    position: relative;
+}
+.form>label{
+    width: 80px;
+    height: 100%;
+    background-color: #959595;
+    font-size: 17px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+}
+.select_zone{
+    position: absolute;
+    width: 800px;
+    height: 100%;
+    margin-left: 80px;
+}
+.select_zone_inner{
+    margin: 15px;
+}
+.select_box{
+    float: left;
+    width: 32%;
+    height: 40px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.select_box:nth-child(3){
+    margin-right: 0px;
+}
+.select_box>select{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #757380;
+    background-color: #fff;
+    line-height: 40px;
+    color: #000;
+    padding: 4px 5px 4px 5px;
+    vertical-align: middle;
+}
+.check_box{
+    position: relative;
+}
+.check_box_inner{
+    margin: 8px 0px;
+}
+.check_box_inner>input{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+}
+.check_box_inner>label{
+    display: block;
+    margin-left: 30px;
+    line-height: 20px;
+}
+.form3{
+    height: 70px;
+}
+.form_inner{
+    display: block;
+    padding: 15px 20px;
+    min-height: 40px;
+}
+.col{
+    display: block;
+    float: left;
+}
+.col_wrapper>ul{
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+.col_wrapper>ul>li{
+    display: inline-block;
+    margin: 0 30px 0 0;
+    padding: 0 !important;
+}
+.col_wrapper>ul>li>div{
+    margin: 8px 0;
+    position: relative;
+    height: 24px;
+    display: inline-block;
+}
+.col_wrapper>ul>li>div input{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.col_wrapper>ul>li>div label{
+    font-weight: bold;
+    height: 24px;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 15px;
+}
+.service_search{
+    width: 330px;
+    margin-right: 30px;
+    padding-right: 80px;
+    position: relative;
+}
+.service_search input[type="search"]{
+    width: 322px;
+    min-width: 299px;
+    height: 40px;
+    background-color: #fff;
+    padding: 0 20px;
+    border: 1px solid #c0c0c0;
+    font-size: 16px;
+    line-height: 38px;
+}
+.search_btn{
+    display: inline-block;
+    width: 70px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    background-color: #666;
+}
+.re_search{
+    margin: 8px 0;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.re_search>input{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.re_search label{
+    height: 24px;
+    display: inline-block;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #333;
+    line-height: 15px;
+    vertical-align: middle;
+}
+/* 사이드 */
+.service_aside{
+    float: right;
+    width: 234px;
 }
