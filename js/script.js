@@ -249,5 +249,24 @@ $(document).ready(function(){
         },
         
     });
-
+    //bojo.html
+    let bojoslide = new Swiper ('.bojo_container', {
+        slidesPerView: 3,
+        spaceBetween: 27,
+        slidesPerGroup:1,
+        slidesOffsetBefore : 0,
+        speed: 1000,
+        autoplay:true,
+        centeredSlides:true,
+        loop: true,
+        navigation : {
+            nextEl : '.channer_next',
+            prevEl : '.channer_prev', 
+        },
+        on: {
+            activeIndexChange: function () {
+                
+            }
+        }, 
+    })
 });

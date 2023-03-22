@@ -68,11 +68,11 @@
                 <div class="header_bottom">
                     <div class="header_bottom_inner">
                         <div class="logo">
-                            <a href="#"><img src="img/img-gov-logo.png"></a>
+                            <a href="index.html"><img src="img/img-gov-logo.png"></a>
                         </div>
                         <ul class="menu">
                             <li><a href="service.html">서비스</a></li>
-                            <li><a href="">보조금24</a></li>
+                            <li><a href="bojo.html">보조금24</a></li>
                             <li><a href="">정책정보</a></li>
                             <li><a href="">고객센터</a></li>
                             <li><a href="">MyGOV</a></li>
@@ -131,10 +131,10 @@
                             </li>
                             <li>
                                 <ul>
-                                    <li>보조금24란</li>
-                                    <li>나의 혜택</li>
-                                    <li>간편 찾기</li>
-                                    <li>전체 혜택</li>
+                                    <li><a href="bojo.html">보조금24란</a></li>
+                                    <li><a href="bojo.html">나의 혜택</a></li>
+                                    <li><a href="bojo.html">간편 찾기</a></li>
+                                    <li><a href="bojo.html">전체 혜택</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -243,55 +243,48 @@
                     </li>
                 </ul>
             </div>
-            <!-- 본문 -->
+            <!-- content -->
             <div class="service_content">
+                <!-- 본문 content -->
                 <div class="service_content_inner">
                     <div class="ser_con">
+                        <!-- form -->
                         <div class="service_form">
                             <div class="form">
                                 <label>분류</label>
-                                <div class="select_zone">
-                                    <div class="select_zone_inner">
-                                        <div class="select_box">
-                                            <select>
-                                            <option value="0">대분류 전체</option>
-                                            <option value="2">취업·직장</option>
-                                            <option value="3">창업·경영</option>
-                                            <option value="4">금융·세금·법륨</option>
-                                            <option value="5">생활·방역</option>
-                                            <option value="6">건강·의료·사망</option>
-                                            <option value="7">결혼·육아·교육</option>
-                                            <option value="8">환경·재난</option>
-                                            <option value="9">폭력·범죄·중독</option>
-                                            <option value="10">주택·부동산</option>
-                                            <option value="11">자동차·교통</option>
-                                            <option value="12">공익·봉사</option>
-                                            <option value="13">여가·문화·출입국</option>
-                                            </select>
-                                        </div>
-                                        <div class="select_box">
-                                            <select>
-                                                <option value="0">중분류 전체</option>
-                                                <option value="2">일자리</option>
-                                                <option value="3">구인/구직활동</option>
-                                                <option value="4">취업지원</option>
-                                                <option value="5">임금/급여</option>
-                                                <option value="6">근로복지</option>
-                                                <option value="7">보험</option>
-                                                <option value="8">교육/훈련</option>
-                                                <option value="9">이직/퇴직</option>
-                                                <option value="10">귀촌/귀농/귀여</option>
-                                            </select>
-                                        </div>
-                                        <div class="select_box">
-                                            <select>
-                                                <option value="0">소분류 전체</option>
-                                                <option value="2">공공 일자리</option>
-                                                <option value="3">민간 기업 일자리</option>
-                                            </select>
+                                <form name="frm1">
+                                    <div class="select_zone">
+                                        <div class="select_zone_inner">
+                                            <div class="select_box">
+                                                <select id="big" onchange="changeFn(this)">
+                                                <option name="big" value="0">대분류 전체</option>
+                                                <option name="big" value="a">취업·직장</option>
+                                                <option name="big" value="b">창업·경영</option>
+                                                <option name="big" value="c">금융·세금·법륨</option>
+                                                <option name="big" value="d">생활·방역</option>
+                                                <option name="big" value="e">건강·의료·사망</option>
+                                                <option name="big" value="f">결혼·육아·교육</option>
+                                                <option name="big" value="g">환경·재난</option>
+                                                <option name="big" value="h">폭력·범죄·중독</option>
+                                                <option name="big" value="i">주택·부동산</option>
+                                                <option name="big" value="j">자동차·교통</option>
+                                                <option name="big" value="k">공익·봉사</option>
+                                                <option name="big" value="l">여가·문화·출입국</option>
+                                                </select>
+                                            </div>
+                                            <div class="select_box">
+                                                <select id="mid" onchange="changeMi()">
+                                                    <option value="0">중분류 전체</option>
+                                                </select>
+                                            </div>
+                                            <div class="select_box">
+                                                <select id="small">
+                                                    <option value="0">소분류 전체</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                             <div class="form">
                                 <label>기관</label>
@@ -373,13 +366,223 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- list -->
+                        <div class="service_list">
+                            <div class="service_list_top">
+                                <a href="">신청순</a>
+                                <a href="">정확도순</a>
+                                <a href="">가나다순</a>
+                            </div>
+                            <ul class="service_list_text">
+                                <li>
+                                    <p><a href="">토지(임야)대장등본교부</a></p>
+                                    <p>토지나 임야의 소재, 지번, 지목, 면적, 소유자 등의 사항이 등록된 토지대장, 임야대장, 경계점좌표등록부를 발급 또는 열람하고자 할 때 신청하는 민원사무입니다.</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">국토교통부</span>
+                                        <span>인증서 불필요</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">토지(임야)대장등본교부(대지권등록부)</a></p>
+                                    <p>토지나 임야의 소재, 지번, 지목, 면적, 소유자 등의 사항이 등록된 토지대장, 임야대장, 경계점좌표등록부를 발급 또는 열람하고자 할 때 신청하는 민원사무입니다.</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">국토교통부</span>
+                                        <span>인증서 불필요</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">토지(임야)대장열람</a></p>
+                                    <p>토지나 임야의 소재, 지번, 지목, 면적, 소유자 등의 사항이 등록된 토지대장, 임야대장, 경계점좌표등록부를 발급 또는 열람하고자 할 때 신청하는 민원사무입니다.</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">국토교통부</span>
+                                        <span>인증서 불필요</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">토지(임야)대장열람(대지권등록부)</a></p>
+                                    <p>토지나 임야의 소재, 지번, 지목, 면적, 소유자 등의 사항이 등록된 토지대장, 임야대장, 경계점좌표등록부를 발급 또는 열람하고자 할 때 신청하는 민원사무입니다.</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">국토교통부</span>
+                                        <span>인증서 불필요</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">주민등록표등본교부</a></p>
+                                    <p>주민등록표의 확인이 필요한 경우 본인이나 세대원 및 정당한 이해관계가 있는 자들이 주민등록표등본(초본)을 신청하는 민원사무입니다. ※ 내국인(재외국인 제외) ※ 인터넷 신청은 본인에 대해서만 가능합니다. 공인인증서로 본인 인증증증증</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">행정안전부</span>
+                                        <span>인증서 필요(본인)</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">주민등록표초본교부</a></p>
+                                    <p>주민등록표의 확인이 필요한 경우 본인이나 세대원 및 정당한 이해관계가 있는 자들이 주민등록표등본(초본)을 신청하는 민원사무입니다. ※ 내국인(재외국인 제외) ※ 인터넷 신청은 본인에 대해서만 가능합니다. 공인인증서로 본인 인증증증증</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">행정안전부</span>
+                                        <span>인증서 필요(본인)</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">영문 주민등록표등본</a></p>
+                                    <p>주민등록표의 확인이 필요한 경우 본인이나 세대원 및 정당한 이해관계가 있는 자들이 주민등록표등본(초본)을 신청하는 민원사무입니다. ※ 내국인(재외국인 제외) ※ 인터넷 신청은 본인에 대해서만 가능합니다. 공인인증서로 본인 인증증증증</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">행정안전부</span>
+                                        <span>인증서 필요(본인)</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">영문 주민등록표초본</a></p>
+                                    <p>주민등록표의 확인이 필요한 경우 본인이나 세대원 및 정당한 이해관계가 있는 자들이 주민등록표등본(초본)을 신청하는 민원사무입니다. ※ 내국인(재외국인 제외) ※ 인터넷 신청은 본인에 대해서만 가능합니다. 공인인증서로 본인 인증증증증</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">행정안전부</span>
+                                        <span>인증서 필요(본인)</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">건축물대장(발급)</a></p>
+                                    <p>건축물대장의 발급 또는 열람을 하기 위해서 신청하는 민원사무입니다( 다만, 평면도의 경우 건축물 소유자의 동의 등을 얻어야 발급이 가능하므로 직접 방문하여야 합니다.) ※ 모바일은 열람만 가능합니다.</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">국토교통부</span>
+                                        <span>인증서 불필요</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><a href="">건축물대장(열람)</a></p>
+                                    <p>건축물대장의 발급 또는 열람을 하기 위해서 신청하는 민원사무입니다( 다만, 평면도의 경우 건축물 소유자의 동의 등을 얻어야 발급이 가능하므로 직접 방문하여야 합니다.) ※ 모바일은 열람만 가능합니다</p>
+                                    <div class="service_list_text_tag">
+                                        <span class="blue_tag">민원서비스</span>
+                                        <span class="dot_tag">국토교통부</span>
+                                        <span>인증서 불필요</span>
+                                    </div>
+                                    <div class="print_btn">
+                                        <a href="">발급</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 페이징 -->
+                        <div class="service_page">
+                            <ul>
+                                <li><a href=""><img src="service/ico-first.gif"></a></li>
+                                <li><a href=""><img src="service/ico-prev.gif"></a></li>
+                                <li><a href="" class="active">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a href=""><img src="service/ico-next.gif"></a></li>
+                                <li><a href=""><img src="service/ico-last.gif"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <aside class="service_aside"></aside>
+                <!-- aside -->
+                <aside class="service_aside">
+                    <div class="service_aside_inner">
+                        <div class="aside_img">
+                            <a href=""><img src="service/subpage_side_banner.jpg"></a>
+                        </div>
+                        <div class="aside_list">
+                            <p>내가 찾은 검색어</p>
+                            <ul>
+                                <li>내가 찾은 검색어가 없습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="aside_list">
+                            <p>오늘 본 서비스</p>
+                            <ul>
+                                <li>최근 열람 서비스가 없습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="aside_list aside_list3">
+                            <p>많이 찾는 서비스</p>
+                            <ul>
+                                <li>
+                                    <span class="aside_number">1</span>
+                                    <a>주민등록표등본(초본)교부</a>
+                                </li>
+                                <li>
+                                    <span class="aside_number">2</span>
+                                    <a>토지(임야)대장 열람·등본발급 신청</a>
+                                </li>
+                                <li>
+                                    <span class="aside_number">3</span>
+                                    <a>건축물대장 등·초본 발급(열람) 신청</a>
+                                </li>
+                                <li>
+                                    <span class="aside_number">4</span>
+                                    <a>지방세 납세증명</a>
+                                </li>
+                                <li>
+                                    <span class="aside_number">5</span>
+                                    <a>지적도(임야도) 등본 발급 및 열람</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside_list">
+                            <p>지자체뉴스</p>
+                            <ul>
+                                <li>
+                                    <a>2023년 중랑미래교육지구 아이들과 함께하는 민관학 공동체 모집 공고</a>
+                                </li>
+                                <li>
+                                    <a>초미세먼지 주의보 발령 알림(2023.3.19.22시)</a>
+                                </li>
+                                <li>
+                                    <a href="">2023년 중랑미래교육지구 중랑청소년 영화학교 운영 사업자 모집 공고</a>
+                                </li>
+                                <li>
+                                    <a>2023년 중랑미래교육지구 교육후견인제 사업 운영기관·단체 공모</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        광주 도시계획시설(공원: 봉산근린공원)사업 실시계획 변경을 위한 사전 열람공고
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </section>
         <!-- 푸터시작 -->
-        <footer style="display: none;">
+        <footer>
             <!-- 푸터상단 -->
             <div class="footer_top">
                 <div class="footer_top_inner">
@@ -511,6 +714,47 @@
             </div>
         </footer>
     </div>
+    <script>
+        function changeFn(e){
+            let mid_a=["중분류 전체","일자리","구인/구직활동","취업지원","임금/급여","근로복지","보험","교육/훈련","이직/퇴직","귀촌/귀농/귀여"];
+            let mid_z=["중분류 전체"]
+            let target = document.getElementById("mid");
+            if(e.value == "a"){
+                var d = mid_a
+            }else{
+                var d = mid_z
+            }
+
+            target.options.length = 0;
+
+            for (x in d) {
+            var opt = document.createElement("option");
+            opt.value = d[x];
+            opt.innerHTML = d[x];
+            target.appendChild(opt);
+	        }	
+        }
+        function changeMi(){
+            let small_a=["소분류 전체","공공 일자리","민간 기업 일자리"];
+            let small_z=["소분류 전체"]
+            let targetSmall = document.getElementById("small");
+            let x = document.getElementById("mid").selectedIndex;
+            if(x==1){
+                var d = small_a
+            }else{
+                var d = small_z
+            }
+
+            targetSmall.options.length = 0;
+
+            for (y in d) {
+            var opt = document.createElement("option");
+            opt.value = d[x];
+            opt.innerHTML = d[x];
+            targetSmall.appendChild(opt);
+	        }	
+        }
+    </script>
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/script.js" defer="defer"></script>
     <script src="swiper/js/swiper.js"></script>

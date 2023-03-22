@@ -165,8 +165,10 @@ nav{
     margin-top: 15px;
 }
 .menu{
-    margin-top: 20px;
-    margin-left: 0px;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    
 }
 .menu>li{
     float: left;
@@ -1526,16 +1528,19 @@ footer{
     overflow: hidden;
     position: relative;
 }
+/* 본문 content */
 .service_content_inner{
     width: 905px;
     float: left;
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 .ser_con{
     margin-left: 0px;
     margin-right: 25px;
     padding-bottom: 50px;
 }
+/* form */
 .service_form{
     margin-bottom: 20px;
 }
@@ -1697,8 +1702,422 @@ footer{
     line-height: 15px;
     vertical-align: middle;
 }
-/* 사이드 */
+/* list */
+.service_list{
+    width: 100%;
+}
+.service_list_top{
+    display: block;
+    text-align: right;
+    margin: 40px 0px 10px; 
+}
+.service_list_top a{
+    font-size: 15px;
+    color: rgb(51,51,51);
+}
+.service_list_top a:not(:first-child){
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.service_list_top a:not(:first-child)::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 1px;
+    height: 10px;
+    margin-top: -5px;
+    background: rgb(219, 219, 219);
+}
+.service_list_text{
+    border-top: 2px solid rgb(204,204,204);
+    border-bottom:2px solid rgb(204,204,204);
+    margin: 0px 0px 50px;
+}
+.service_list_text>li{
+    position: relative;
+    border-bottom: 2px solid rgb(204,204,204);
+    padding: 18px 150px 18px 7px;
+    vertical-align: middle;
+}
+.service_list_text>li:last-child{
+    border-bottom: none;
+}
+.service_list_text>li>p:first-child{
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: rgba(51,51,51);
+}
+.service_list_text>li>p:hover{
+    text-decoration: underline;
+}
+.service_list_text>li>p:nth-child(2){
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    max-height: 44px;
+    overflow: hidden;
+    margin-bottom: 6px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+}
+.blue_tag{
+    display: inline-block;
+    height: 22px;
+    background-color: rgb(55,130,233);
+    border-radius: 11px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 10px !important;
+    margin-right: 10px;
+}
+.service_list_text_tag>span:not(:first-child){
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(102,102,102);
+    margin: 0px 10px 0px 0px !important;
+    padding: 0px 10px 0px 0px !important;
+}
+.dot_tag{
+    position: relative;
+}
+.dot_tag::after{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    left: auto;
+    width: 2px;
+    height: 2px;
+    background-color: rgb(88, 92, 96);
+    margin-top: -1px;
+    content: "";
+}
+.print_btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 103px;
+    height: 40px;
+    margin-top: -20px;
+    background-color: rgb(41,74,127);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+/* 페이징 */
+.service_page{
+    line-height: 30px;
+    text-align: center;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.service_page>ul>li{
+    display: inline-block;
+}
+.service_page>ul>li>a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 13px;
+}
+.active{
+    background-color: rgb(2235,25,58);
+    color: #fff;
+}
+.service_page>ul>li>a:hover{
+    background-color: rgb(2235,25,58);
+    color: #fff;
+}
+/* aside */
 .service_aside{
+    margin-right: 0px;
+    height: 100%;
     float: right;
     width: 234px;
+    padding-top: 20px;
+    margin: 0px 0px 100px;
+}
+.service_aside_inner{
+    margin: 0px 17px;
+}
+.aside_list{
+    margin-top: 20px;
+    position: relative;
+}
+.aside_list>p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.aside_list>ul{
+    padding-top: 3px;
+    border-top: 1px solid#dbdbdb;
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.aside_list>ul>li{
+    position: relative;
+    margin-left: 0px;
+    padding-top: 5px;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    list-style: square;
+    overflow: hidden;
+    padding-left: 7px;
+    background: url(service/as_list_dot.gif) no-repeat 0 13px;
+}
+.aside_number{
+    position: absolute;
+    left: 0px;
+    top:8px;
+    display: block;
+    width: 15px;
+    height: 14px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.aside_list3>ul>li{
+    padding-left: 20px;
+}
+.aside_list>ul>li>a:hover{
+    text-decoration: underline;
+}
+/* 라인 */
+.service_content_inner::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 235px;
+    width: 1px;
+    height: 100%;
+    background: rgb(151, 151, 151);
+}
+
+/* bojo.html */
+.bojo_search{
+    position: absolute;
+    right: 20px;
+    align-self: center;
+    box-sizing: border-box;
+}
+.bojo_search_box{
+    width: 320px;
+    position: relative;
+}
+.bojo_search_box>input{
+    width: 100%;
+    height: 44px;
+    padding: 0 25px;
+    border: 3px solid #3352a4;
+    border-radius: 30px;
+    color: #555;
+    font-size: 14px;
+}
+.bojo_search_btn{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    top: 50%;
+    right: 7px;
+    border: none;
+    overflow: hidden;
+    background: #3352a4 url(bojo/ico_btn_search.png) 50% 50% no-repeat;
+    background-size: 32px 32px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* 보조금 24 본문 */
+.bojo_content{
+    width: 100%;
+}
+.bojo_content_inner{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.bojo_inner{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.bojo_inner_big_t{
+    text-align: center;
+    line-height: 1.5;
+}
+.bojo_inner_big_t p:first-child{
+    font-size: 34px;
+    color: rgb(68,68,68);
+}
+.bojo_inner_big_t p:first-child>span,
+.bojo_inner_big_t p:nth-child(2)>span
+{
+    font-weight: bold;
+}
+.bojo_inner_big_t p:nth-child(2){
+    font-size: 38px;
+    color: rgb(34,34,34);
+}
+.yellow{
+    position: relative;
+}
+.yellow::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 6px;
+    width: 100%;
+    height: 14px;
+    background-color: rgb(255, 223, 80);
+    opacity: 0.5;
+    z-index: -1;
+}
+.bojo_sub_text{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(102,102,102);
+}
+.bojo_btn_wrap{
+    margin-top: 30px;
+    text-align: center;
+}
+.bojo_btn_wrap>a{
+    display: inline-block;
+    background-color: rgb(255,223,80);
+    border: 1px solid rgb(220,192,69);
+    padding: 0px 20px;
+    height: 50px;
+    border-radius: 8px;
+    color: #000;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: bold;
+}
+/* 보조금 24 슬라이드 */
+
+.bojo_main_slide{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+.bojo_container{
+    padding-top: 40px;
+    height: 380px;
+    overflow: hidden;
+}
+.bojo_swiper_slide{
+    overflow: hidden;
+    width: 364px;
+    margin-left: 0px;
+}
+.bojo_slide_inner{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: rgb(244,238,222);
+}
+.bojo_slide_inner>div{
+    border-radius: 16px;
+    height: 280px;
+    padding: 24px;
+}
+.wnd{
+    display: inline-block;
+    padding: 6px;
+    font-size: 13px;
+    color: rgb(0, 106, 226);
+    line-height: 15px;
+    border: 1px solid rgb(153, 195, 243);
+    border-radius: 4px;
+}
+.bojo_slide_title{
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(34,34,34);
+}
+.bojo_slide_text{
+    display: -webkit-box;
+    margin-top: 16px;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+
+/* 보조금24슬라이드에 hover하면 나오는 내용 */
+.bojo_hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    padding: 24px 24px 0px 24px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.bojo_hover1_span{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(34,34,34);
+}
+.bojo_hover1_p{
+    display: -webkit-box;
+    margin-top: 3px;
+    font-size: 16px;
+    color: rgb(68,68,68);
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.bojo_hover2{
+    margin-top: 18px;
+}
+.bojo_hover_btn{
+    position: absolute;
+    left: -25px;
+    bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 0px 30px;
+}
+.bojo_hover_btn>a{
+    border: 1px solid rgb(188,143,26);
+    display: inline-block;
+    width: calc((100%-12px)/2);
+    height: 44px;
+    border-radius: 8px;
+    color: #000;
+    vertical-align: middle;
+}
+.bojo_hover_btn>a>span{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(188,143,26);
+    line-height: 44px;
+}
+.bojo_slide_inner:hover .bojo_hover{
+    display: block;
 }

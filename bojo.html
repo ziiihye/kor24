@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- swiperis -->
+    <link rel="stylesheet" href="swiper/css/swiper.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <title>정부24</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <!-- 헤더 상단 -->
+            <div class="header_top">
+                <p>
+                    <img src="img/top_icon.png">
+                    이 누리집은 대한민국 공식 전자정부 누리집입니다.
+                </p>
+            </div>
+            <!-- 외국인 및 헤더 중앙 메뉴 -->
+            <div class="header_middle">
+                <div class="header_middle_inner">
+                    <div class="foreigner">
+                        <a id="foreigner">
+                            For Foreigners &nbsp;
+                            <img src="icon/ico_arrow_type07.png" class="down">
+                            <img src="icon/ico_arrow_type07 (1).png" class="up">
+                        </a>
+                    </div>
+                    <div class="header_middle_inner_left">
+                        <a href="#">어린이</a>
+                    </div>
+                    <ul class="header_middle_menu">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">정부24소개</a></li>
+                        <li><a href="#">누리집 안내지도</a></li>
+                        <li>
+                            <a href="#">
+                                화면크기 
+                                <div class="zoom">
+                                    <div id="zoom_out">-</div>
+                                    <div id="zoom_per"><p>100%</p></div>
+                                    <div id="zoom_in">+</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="foreigners_menu">
+                        <ul>
+                            <li><a>한국어</a></li>
+                            <li><a>ENG</a></li>
+                            <li><a>中文</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 로고 및 메뉴(헤더 하단) -->
+            <nav>
+                <div class="header_bottom">
+                    <div class="header_bottom_inner">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/img-gov-logo.png"></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="service.html">서비스</a></li>
+                            <li><a href="bojo.html">보조금24</a></li>
+                            <li><a href="">정책정보</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">MyGOV</a></li>
+                        </ul>
+                        <div class="first_btn" style="display: none;">
+                            <a href="">
+                                <img src="img/first-ico-guide.png">
+                                <p class="first_ment">처음 오셨나요?</p>
+                                <p class="first_arrow"></p>
+                            </a>
+                        </div>
+                        <div class="bojo_search" style="display: block;">
+                            <div class="bojo_search_box">
+                                <input type="search">
+                            </div>
+                            <button class="bojo_search_btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav에 hover하면 보이는 메뉴 -->
+                <div class="nav_inner_box">
+                    <!-- 서비스 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-1.png">
+                                <p><a href="service.html">서비스</a></p>
+                            </li>
+                            <li>
+                                <p class="nav_box_title">민원신청</p>
+                                <ul>
+                                    <li><a href="service.html">신청·조회·발급</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="nav_box_title">서비스신청</p>
+                                <ul>
+                                    <li><a href="service.html">원스톱/생애주기/꾸러미서비스</a></li>
+                                    <li><a href="service.html">연령/대상별 서비스</a></li>
+                                    <li><a href="service.html">분야별 서비스</a></li>
+                                    <li><a href="service.html">기업단체 서비스</a></li>
+                                    <li><a href="service.html">외국인 서비스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="nav_box_title">간편 확인/안내</p>
+                                <ul>
+                                    <li><a href="service.html">사실/진위확인</a></li>
+                                    <li><a href="service.html">행정정보공동이용<br>(e하나로민원)</a></li>
+                                    <li><a href="service.html">공공자원공유</a></li>
+                                    <li><a href="service.html">돌봄시설 등 위치 찾기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 보조금 24 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-2.png">
+                                <p style="width: 100%;">보조금24</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="bojo.html">보조금24란</a></li>
+                                    <li><a href="bojo.html">나의 혜택</a></li>
+                                    <li><a href="bojo.html">간편 찾기</a></li>
+                                    <li><a href="bojo.html">전체 혜택</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 정책정보 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-3.png">
+                                <p>정책정보</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>분야별 정책정보</li>
+                                    <li>정부/지자체 조직도</li>
+                                    <li>정부/지자체 운영누리집</li>
+                                    <li>행정기관위원회</li>
+                                    <li>지자체소식</li>
+                                    <li>공모전</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 고객센터 -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-4.png">
+                                <p style="width: 100%;">고객센터</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>정부24 이용방법</li>
+                                    <li>공지사항</li>
+                                    <li>자료실</li>
+                                    <li>서비스지원</li>
+                                    <li>자주묻는질문(FAQ)</li>
+                                    <li>상담예약</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- MyGOV -->
+                    <div class="nav_box">
+                        <ul>
+                            <li>
+                                <img src="img/nav-5.png">
+                                <p style="width: 100%;">MyGOV</p>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>나의 서비스</li>
+                                    <li>전자문서지갑</li>
+                                    <li>나의 생활정보</li>
+                                    <li>나의 상담</li>
+                                    <li>나의 회원정보</li>
+                                    <li>나의 인증관리</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- 보조금24 -->
+        <section class="service_section">
+            <!-- 상단 네비게이션 -->
+            <div class="service_content_top">
+                <div class="service_content_top_inner">
+                    <div>
+                        <ul class="service_content_top_navi">
+                            <li>
+                                <a>Home</a>
+                                <span><img src="service/ico_bc_list.png"></span>
+                            </li>
+                            <li>
+                                <a>보조금24</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="bojo_content">
+                <div class="bojo_content_inner">
+                    <div class="bojo_inner">
+                        <!-- 보조금 24 상단 텍스트 -->
+                        <div class="bojo_inner_top">
+                            <div class="bojo_inner_big_t">
+                                <p><span>내(가족)</span>가 <span>받을 수 </span>있는 <span>보조금</span></p>
+                                <p><span class="yellow">한 번에 확인</span>하고 <span class="yellow">신청</span>할 수 있어요.</p>
+                            </div>
+                            <p class="bojo_sub_text">개인(회원)정보와 자격정보를 확인하여 내게 딱 맞는 맞춤형으로 제공하는 정부혜택</p>
+                            <div class="bojo_btn_wrap">
+                                <a href="">
+                                    <span>로그인하고 확인하기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bojo_main_slide">
+                            <div class="bojo_container">
+                                <div class="bojo_swiper_wrapper swiper-wrapper">
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">1다같이 돌봄</p>
+                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
+                                                <img src="">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">다같이 돌봄</p>
+                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
+                                                <img src="">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">다같이 돌봄</p>
+                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
+                                                <img src="">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">다같이 돌봄</p>
+                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
+                                                <img src="">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">다같이 돌봄</p>
+                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
+                                                <img src="">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">다같이 돌봄</p>
+                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
+                                                <img src="">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 푸터시작 -->
+        <footer style="display: none;">
+            <!-- 푸터상단 -->
+            <div class="footer_top">
+                <div class="footer_top_inner">
+                    <div class="footer_top_left">
+                        <ul>
+                            <li><a href="">개인정보처리방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_top_right">
+                        <ul>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 푸터중앙 -->
+            <div class="footer_mid">
+                <div class="footer_mid_inner">
+                    <div class="footer_logo">
+                        <img src="footer/logo_footer.png">
+                    </div>
+                    <div class="footer_mid_mid">
+                        <div class="footer_mid_left">
+                            <p class="footer_mid_title">정부24 콜센터</p>
+                            <p style="font-weight: bold; font-size: 17px;">
+                                1588-2188<br>
+                                02-3703-2500<span style="font-weight: 200;">(<span style="color: red;">지역번호 '02'</span>를 확인하세요.)</span>
+                            </p>
+                            <p style="font-weight: 200;">(09:00 ~ 18:00 평일)</p>
+                            <ul class="footer_mid_list">
+                                <li>
+                                    내선번호
+                                </li>
+                                <li>
+                                    [1번]
+                                    <span style="font-weight: 200;">
+                                        주민등록초본,건축물대장,토지대장 문의
+                                    </span>
+                                </li>
+                                <li>
+                                    [2번]
+                                    <span style="font-weight: 200;">
+                                        민원신청 및 발급문의
+                                    </span>
+                                </li>
+                                <li>
+                                    [3번]
+                                    <span style="font-weight: 200;">
+                                        보조금24조회,신청문의
+                                    </span>
+                                </li>
+                                <li>
+                                    [4번]
+                                    <span style="font-weight: 200;">
+                                        회원가입 및 로그인 문의
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_mid_right">
+                            <p class="footer_mid_title">정부민원안내콜센터</p>
+                            국번없이 110<br>
+                            <span style="font-weight: 200;">(무료,365일 24시간)</span>
+                        </div>
+                    </div>
+                    <div class="footer_right">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    찾아오시는길
+                                    <div class="next">
+                                        <img src="icon/ico-swiper-next2 (1).png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    상담예약
+                                    <div class="next">
+                                        <img src="icon/ico-swiper-next2 (1).png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    누리집 개선의견수렴
+                                    <div class="next">
+                                        <img src="icon/ico-swiper-next2 (1).png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    공공서비스 활용(open API)
+                                    <div class="next">
+                                        <img src="icon/ico-swiper-next2 (1).png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 푸터하단 -->
+            <div class="footer_btm">
+                <div class="footer_btm_inner">
+                    <div class="footer_btm_inner_right">
+                        <span>
+                            Copyright © Ministry of the Interior and Safety. All Rights Reserved.
+                        </span>
+                        <div class="rhkrlqn"><img src="footer/logo_wa.png"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js" defer="defer"></script>
+    <script src="swiper/js/swiper.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+</body>
+</html>
