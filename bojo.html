@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
     <!-- swiperis -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="swiper/css/swiper.css">
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <title>정부24</title>
@@ -243,13 +244,14 @@
                         <div class="bojo_main_slide">
                             <div class="bojo_container">
                                 <div class="bojo_swiper_wrapper swiper-wrapper">
+                                    <!-- 다같이 돌봄 -->
                                     <div class="bojo_swiper_slide swiper-slide">
-                                        <div class="bojo_slide_inner">
+                                        <div class="bojo_slide_inner col1">
                                             <div>
                                                 <span class="wnd">중앙부처</span>
-                                                <p class="bojo_slide_title">1다같이 돌봄</p>
+                                                <p class="bojo_slide_title">다같이 돌봄</p>
                                                 <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
-                                                <img src="">
+                                                <img class="bojo_imgs" src="bojo/col1.png">
                                             </div>
                                             <div class="bojo_hover">
                                                 <div class="bojo_hover1">
@@ -261,133 +263,336 @@
                                                     <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
                                                 </div>
                                                 <div class="bojo_hover_btn">
-                                                    <a href="">
-                                                        <span>상세보기</span>
+                                                    <a href="" style="border: 1px solid #bc8f1a;">
+                                                        <span style="color: #bc8f1a;">상세보기</span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- 치매 치료 관리비 지원 -->
                                     <div class="bojo_swiper_slide swiper-slide">
-                                        <div class="bojo_slide_inner">
+                                        <div class="bojo_slide_inner col2">
                                             <div>
                                                 <span class="wnd">중앙부처</span>
-                                                <p class="bojo_slide_title">다같이 돌봄</p>
-                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
-                                                <img src="">
+                                                <p class="bojo_slide_title">치매 치료관리비 지원</p>
+                                                <p class="bojo_slide_text">60세이상 치매 어르신에게 약제비와 진료비의 본인부담금 지원 (최대 월 3만 원)</p>
+                                                <img class="bojo_imgs" src="bojo/col2.png">
                                             </div>
                                             <div class="bojo_hover">
                                                 <div class="bojo_hover1">
                                                     <span class="bojo_hover1_span">신청대상</span>
-                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 주민등록기준 보건소(치매안심센터)에 치매환자로 등록된 자로서 
+                                                        치매치료관리비 지원을 받고자하는 자
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover2">
                                                     <span class="bojo_hover1_span">제출서류</span>
-                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                    <p class="bojo_hover1_p">
+                                                        - 지원신청서
+                                                        - 본인명의 입금통장사본
+                                                        - 치매치료제가 포함된 당해년도 발행된 약처방전 또는 약품명이 기재된 약국 영수증
+                                                        - 지원대상자의 주민등록등본 1부
+                                                        - 신청일 전월 기준 건강보험료 납부확인서 및 건강보험증 사본 1부
+                                                        - 행정정보 공동이용 사전 동의서
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover_btn">
-                                                    <a href="">
-                                                        <span>상세보기</span>
+                                                    <a href="" style="border: 1px solid #75a41b;">
+                                                        <span style="color: #75a41b;">상세보기</span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- 출산전후(유산ㆍ사산)휴가급여 -->
                                     <div class="bojo_swiper_slide swiper-slide">
-                                        <div class="bojo_slide_inner">
+                                        <div class="bojo_slide_inner col3">
                                             <div>
                                                 <span class="wnd">중앙부처</span>
-                                                <p class="bojo_slide_title">다같이 돌봄</p>
-                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
-                                                <img src="">
+                                                <p class="bojo_slide_title">출산전후(유산ㆍ사산)휴가급여</p>
+                                                <p class="bojo_slide_text">임신 중인 여성근로자에게 출산전후(유산･사)가 및 급여 지급(출산, 유산에 따라 차등지원)</p>
+                                                <img class="bojo_imgs" src="bojo/col3.png">
                                             </div>
                                             <div class="bojo_hover">
                                                 <div class="bojo_hover1">
                                                     <span class="bojo_hover1_span">신청대상</span>
-                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ㅇ근로기준법에 따른 출산전후(유산ㆍ사산)휴가를 부여 받은 근로자
+                                                        ㅇ 피보험 단위기간이 180일 이상
+                                                        · 출산전후휴가(유산 또는 사산휴가)를 시작일 이후 1개월~종료일 이후 12개월 이내 신청
+                                                        ㅇ 출산전후휴가 급여
+                                                        - 출산전후휴가 급여등 신청서 (고용보험법 시행규칙 별지 제105호서식) * 출산전후휴가에 체크
+                                                        - 출산 전후휴가 확인서(고용보험법 시행규칙 별지 제107호서식, 최초 1회만 해당)
+                                                        - 통상임금을 확인할 수 있는 자료(임금대장, 근로계약서 등) 사본 
+                                                        - 휴가 기간 동안 사업주로부터 금품을 지급받은 경우 이를 확인할 수 있는 자료
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover2">
                                                     <span class="bojo_hover1_span">제출서류</span>
-                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ㅇ 유산ㆍ사산휴가 급여
+                                                        - 출산전후휴가 급여등 신청서 (고용보험법 시행규칙 별지 제105호서식) *  유산ㆍ사산휴가에 체크
+                                                        - 유산ㆍ사산휴가 확인서(고용보험법 시행규칙 별지 제107호서식, 최초 1회만 해당)
+                                                        - 통상임금을 확인할 수 있는 자료(임금대장, 근로계약서 등) 사본 
+                                                        - 휴가 기간 동안 사업주로부터 금품을 지급받은 경우 이를 확인할 수 있는 자료
+                                                        - 유산 또는 사산을 하였음을 증명할 수 있는 의료기관의 진단서
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover_btn">
-                                                    <a href="">
-                                                        <span>상세보기</span>
+                                                    <a href="" style="border: 1px solid #34a852;">
+                                                        <span style="color: #34a852;">상세보기</span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- 코로나19 입원·격리자 생활지원비 지원 -->
                                     <div class="bojo_swiper_slide swiper-slide">
-                                        <div class="bojo_slide_inner">
+                                        <div class="bojo_slide_inner col4">
                                             <div>
                                                 <span class="wnd">중앙부처</span>
-                                                <p class="bojo_slide_title">다같이 돌봄</p>
-                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
-                                                <img src="">
+                                                <p class="bojo_slide_title">코로나19 입원·격리자 생활지원비 지원</p>
+                                                <p class="bojo_slide_text">코로나19로 입원·격리 통지서를 받은 사람에게 생활지원비 지원</p>
+                                                <img class="bojo_imgs" src="bojo/col4.png">
                                             </div>
                                             <div class="bojo_hover">
                                                 <div class="bojo_hover1">
                                                     <span class="bojo_hover1_span">신청대상</span>
-                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ○「감염병의 예방 및 관리에 관한 법률」에 따라 입원･격리 통지서를 받은 사람
+                                                        - 입원·격리자 가구의 소득이 기준 중위소득 100%이하 금액에 해당하는 가구
+                                                        * 가구의 소득은 '동거인'을 제외한 전체 가구원(격리자+미격리자)의 본인부담 건강보험료(부과액)를 합산하여 판정함
+                                                        ** '22.7.10. 이전 격리시작한 자는 소득기준 미적용
+                                                        ※ 상세 안내 : https://ncv.kdca.go.kr/menu.es?mid=a30406000000
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover2">
                                                     <span class="bojo_hover1_span">제출서류</span>
-                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 온라인 신청
+                                                        - 예외 신청사유 증빙서류(유급휴가 미제공 확인서* 등, 해당자에 한함)
+                                                        * 유급휴가를 제공받지 못한 근로자(건강보험 자격 상의 직장가입자)의 경우, 유급휴가 미제공 확인서를 첨부하여 신청 가능
+
+                                                        ○오프라인 신청
+                                                        - 생활지원비 신청서(서식 제1호) 1부
+
+                                                        - 격리대상자 본인 통장(사본) 1부
+
+                                                        - 본인 및 대리인 신분증(주민등록증, 운전면허증, 여권)
+
+                                                        - 주민등록 등본 등 세대별 가구원 수를 확인할 수 있는 서류
+                                                        * 단, 행정정보 공동이용에 동의한 경우는 생략 가능
+
+                                                        - 소득기준을 확인 확인할 있는 서류(건강보험료 납부확인서 등)
+                                                        * 단, 보조금24(연계시스템을 포함)를 통해 확인되거나, 행정정보 공동이용에 동의한 경우는 생략 가능
+
+                                                        - 위임장(서식 제2호) 1부(대리인이 신청하는 경우에 한함)
+
+                                                        - 예외 신청사유 증빙서류(유급휴가 미제공 확인서 등, 해당자에 한함)
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover_btn">
-                                                    <a href="">
-                                                        <span>상세보기</span>
+                                                    <a href="" style="border: 1px solid #09a788;">
+                                                        <span style="color: #09a788;">상세보기</span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- 국민내일배움카드 -->
                                     <div class="bojo_swiper_slide swiper-slide">
-                                        <div class="bojo_slide_inner">
+                                        <div class="bojo_slide_inner col5">
                                             <div>
                                                 <span class="wnd">중앙부처</span>
-                                                <p class="bojo_slide_title">다같이 돌봄</p>
-                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
-                                                <img src="">
+                                                <p class="bojo_slide_title">국민내일배움카드</p>
+                                                <p class="bojo_slide_text">직업훈련을 희망하는 국민에게 직업능력개발훈련비와 훈련장려금 지원</p>
+                                                <img class="bojo_imgs" src="bojo/col5.png">
                                             </div>
                                             <div class="bojo_hover">
                                                 <div class="bojo_hover1">
                                                     <span class="bojo_hover1_span">신청대상</span>
-                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 국민 누구나
+
+                                                        ○ 지원 제외 대상
+                                                        ①공무원, 사립학교 교직원
+                                                        ②졸업까지 수업연한이 2년이 초과하여 남은 대학생 및 졸업예정자가 아닌 고등학생
+                                                        ③연 매출 1억 5천만원 이상의 자영업자 
+                                                        ④월 임금 300만원 이상인 대규모기업 근로자(만 45세 미만)
+                                                        ⑤월 소득 300만원 이상인 특수형태근로종사자 등
+                                                        ⑥만 75세 이상자 등
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover2">
                                                     <span class="bojo_hover1_span">제출서류</span>
-                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                    <p class="bojo_hover1_p">
+                                                        - 신분증
+                                                        - 직업능력개발계좌(내일배움카드) 발급 신청서
+                                                        - 개인정보의 수집·이용에 관한 동의서
+                                                        - 기타 지원대상별 입증 서류
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover_btn">
-                                                    <a href="">
-                                                        <span>상세보기</span>
+                                                    <a href="" style="color: #19a3be;">
+                                                        <span style="color: #19a3be;">상세보기</span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- 근로·자녀장려금 -->
                                     <div class="bojo_swiper_slide swiper-slide">
-                                        <div class="bojo_slide_inner">
+                                        <div class="bojo_slide_inner col6">
                                             <div>
                                                 <span class="wnd">중앙부처</span>
-                                                <p class="bojo_slide_title">다같이 돌봄</p>
-                                                <p class="bojo_slide_text">만 6~12세 아동에게 정기돌봄, 방과 후 프로그램 연계 등 맞춤형 돌봄 서비스 제공</p>
-                                                <img src="">
+                                                <p class="bojo_slide_title">근로·자녀장려금</p>
+                                                <p class="bojo_slide_text">소득과 재산이 적은 근로소득자에게 근로장려금을, 자녀가 있을 경우 자녀장려금 지급</p>
+                                                <img class="bojo_imgs" src="bojo/col6.png">
                                             </div>
                                             <div class="bojo_hover">
                                                 <div class="bojo_hover1">
                                                     <span class="bojo_hover1_span">신청대상</span>
-                                                    <p class="bojo_hover1_p">○ 돌봄이 필요한 만 6~12세 아동(소득수준 무관)</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 신청요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구로써 신청기간 내 신청하는 경우 근로소득, 사업소득 또는 종교인소득에 따라 산정한 근로장려금과 부양자녀수에 따라 산정한 자녀장려금을 지급
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover2">
                                                     <span class="bojo_hover1_span">제출서류</span>
-                                                    <p class="bojo_hover1_p">신청서, 기타 지자체장이 대상자 선정을 위해 요구하는 증빙자료</p>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 소득재산 등 증거자료 제출 불필요한 경우 : 국세청에서 확인한 소득, 재산 등의 자료와 동일한 경우
+                                                        ○ 소득재산 등 증거자료 제출 필요한 경우 : 국세청에서 확인한 소득, 재산 등의 자료와 다른 경우
+                                                    </p>
                                                 </div>
                                                 <div class="bojo_hover_btn">
-                                                    <a href="">
-                                                        <span>상세보기</span>
+                                                    <a href="" style="border: 1px solid #5986c7;">
+                                                        <span style="color: #5986c7;">상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 통합문화이용권(바우처) 지원 -->
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner col7">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">통합문화이용권(바우처) 지원</p>
+                                                <p class="bojo_slide_text">기초생활수급자 및 차상위 계층에게 문화예술, 국내여행 등에 사용 가능한 문화누리카드 제공</p>
+                                                <img class="bojo_imgs" src="bojo/col7.png">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 기초생활보장 수급자 및 차상위 계층 (6세 이상)
+                                                    </p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">
+                                                        (구비서류)
+                                                        ○ 온라인: 본인 명의 휴대폰과 공인인증서 필요
+
+                                                        ○ 주민센터 신청 시 
+                                                        (공통서류: 발급 신청서 *주민센터 구비)
+
+                                                        <만 19세 이상>
+                                                        - 본인 신청: 신청자 신분증
+                                                        - 대리 신청: 신청자 신분증, 대리인 신분증, 문화이용권 신청 위임장
+
+                                                        <만 14세-18세>
+                                                        - 본인 신청: 신청자 신분증
+                                                        - 법정대리인 신청: 법정대리인 신분증, 신청인(아동) 기본증명서(상세), 신청인 가족관계증명서
+                                                        - 세대주 또는 세대원(성인) 신청: 세대주 또는 세대원(성인) 신분증, 주민등록등본
+                                                        - 신청자 본인의 위임을 받은 대리인 신청: 신청자 신분증, 대리인 신분증, 문화이용권 신청 위임장
+                                                        - 법정대리인의 위임을 받은 대리인 신청: 대리인 신분증, 법정대리인 신분증, 신청인(아동) 기본증명서(상세), 신청인(아동) 가족관계증명서, 문화이용권 신청 위임장
+                                                        - 세대주(성인 세대원)의 위임을 받은 대리인 신청: 대리인 신분증, 세대주 또는 세대원(성인) 신분증, 주민등록등본, 문화이용권 신청 위임장
+
+                                                        <만 14세미만>
+                                                        - 법정대리인 신청: 법정대리인 신분증, 신청인(아동) 기본증명서(상세), 신청인 가족관계증명서
+                                                        - 세대주 또는 세대원(성인) 신청: 세대주 또는 세대원(성인) 신분증, 주민등록등본
+                                                        - 법정대리인의 위임을 받은 대리인 신청: 대리인 신분증, 법정대리인 신분증, 신청인(아동) 기본증명서(상세), 신청인(아동) 가족관계증명서, 문화이용권 신청 위임장
+                                                        - 세대주(성인 세대원)의 위임을 받은 대리인 신청: 대리인 신분증, 세대주 또는 세대원(성인) 신분증, 주민등록등본, 문화이용권 신청 위임장
+                                                        - 본인 신청: ①법정대리인 신분증, 신청인(아동) 기본증명서(상세), 신청인 가족관계증명서, 문화이용권 신청 위임장 또는 ②세대주 또는 세대원(성인) 신분증, 주민등록등본, 문화이용권 신청 위임장
+
+                                                        <복지시설 발급>
+                                                        - 복지시설(대표자) 신청: 신청자 신분증, 복지시설 대표자 신분증, 복지시설 발급신청서, 복지시설 거주자 확인서(자체 양식)
+                                                        - 복지시설 대표자의 대리인 신청: 신청자 신분증, 복지시설 대표자 신분증, 대리인 신분증, 복지시설 발급신청서, 복지시설 대표자의 위임장, 복지시설 거주자 확인서(자체 양식)"
+                                                    </p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="" style="border: 1px solid #a781d8;">
+                                                        <span style="color: #a781d8;">상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 국민취업지원제도 -->
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner col8">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">국민취업지원제도</p>
+                                                <p class="bojo_slide_text">직업훈련, 일경험, 복지 프로그램 연계 등 취업지원서비스 제공 및 생계안정 지원</p>
+                                                <img class="bojo_imgs" src="bojo/col8.png">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">
+                                                        ∙ I유형
+                                                        -(요건심사형) 중위소득 60% 이하, 재산 4억 이하(18~34세 청년은 재산 5억원 이하)이면서, 최근 2년 이내 100일 또는 800시간 이상의 취업경험이 있는 분
+                                                        -(선발형) 요건심사형 중 취업경험 요건을 충족하지 못한 분( 18~34세 청년은 중위소득 120% 이하, 재산 5억원 이하, 취업경험 무관)
+
+                                                        ∙ II유형: I유형에 해당하지 않는 가구단위 중위소득 100% 이하(청년은 소득 무관)
+                                                    </p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">
+                                                        (필수) 취업지원신청서 및 지원자격 확인을 위한 개인정보 수집, 이용 및 제공 동의서
+                                                        (필요시 추가서류)
+                                                        - 가구단위 증빙서류: 가족관계증명원, 이혼소송확인서, 실종신고서 등
+                                                        - 특정취약계층 증빙서류: 관련 추천서, 확인서 등
+                                                        - 전산망으로 확인불가 또는 전산망에 실시간 연계되지 않은 소득, 재산, 취업경험 관련정보: 사업주 확인자료 등 관련 증빙자료
+                                                    </p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="" style="border: 1px solid #e56f6f;">
+                                                        <span style="color: #e56f6f;">상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 내집마련 디딤돌 대출 -->
+                                    <div class="bojo_swiper_slide swiper-slide">
+                                        <div class="bojo_slide_inner col9">
+                                            <div>
+                                                <span class="wnd">중앙부처</span>
+                                                <p class="bojo_slide_title">내집마련 디딤돌 대출</p>
+                                                <p class="bojo_slide_text">호당 2.5억 원 한도, 연 2.15% ~ 3.00%(소득과 만기에 따라 차등) 금리</p>
+                                                <img class="bojo_imgs" src="bojo/col9.png">
+                                            </div>
+                                            <div class="bojo_hover">
+                                                <div class="bojo_hover1">
+                                                    <span class="bojo_hover1_span">신청대상</span>
+                                                    <p class="bojo_hover1_p">
+                                                        ○ 연소득(부부합산) 6천만 원 이하인 자(단, 생애 최초 주택구입자는 연소득(부부합산) 7천만 원 이하인 자)로서, 만 19세 이상 무주택자로서 전용면적 85㎡ 이하(단, 수도권 제외, 읍·면 지역은 100㎡ 이하) 평가액 5억 원 이하 주택을 구입하는 경우
+                                                    </p>
+                                                </div>
+                                                <div class="bojo_hover2">
+                                                    <span class="bojo_hover1_span">제출서류</span>
+                                                    <p class="bojo_hover1_p">
+                                                        소득 및 재직 증빙 서류, 개인 정보 제공동의서 등
+                                                    </p>
+                                                </div>
+                                                <div class="bojo_hover_btn">
+                                                    <a href="" style="border: 1px solid #e4754e;">
+                                                        <span style="color: #e4754e">상세보기</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -537,5 +742,6 @@
     <script src="js/script.js" defer="defer"></script>
     <script src="swiper/js/swiper.js"></script>
     <script src="swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

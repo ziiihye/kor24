@@ -250,23 +250,30 @@ $(document).ready(function(){
         
     });
     //bojo.html
-    let bojoslide = new Swiper ('.bojo_container', {
+    let bojoslide = new Swiper('.bojo_container', {
         slidesPerView: 3,
         spaceBetween: 27,
         slidesPerGroup:1,
-        slidesOffsetBefore : 0,
-        speed: 1000,
-        autoplay:true,
-        centeredSlides:true,
-        loop: true,
-        navigation : {
-            nextEl : '.channer_next',
-            prevEl : '.channer_prev', 
+        centeredSlides: true,
+        autoplay:{
+            dealy:500,
+            disableOnInteraction: false,
         },
-        on: {
-            activeIndexChange: function () {
-                
-            }
-        }, 
-    })
+        loop: true,
+      });
+    //  mouseover하면 슬라이드 멈춤  
+      $('.bojo_slide_inner').hover(function(){
+        bojoslide.autoplay.stop();
+      }, function(){
+        bojoslide.autoplay.start();
+      });
+    
+      $(".bojo_slide_inner").mouseover(function(){
+        let bi = $(".bojo_slide_inner").index(this)
+        $(".bojo_slide_inner").eq(bi).children(".bojo_hover").fadeIn(50);
+      })
+      $(".bojo_slide_inner").mouseleave(function(){
+        let bi = $(".bojo_slide_inner").index(this)
+        $(".bojo_slide_inner").eq(bi).children(".bojo_hover").fadeOut(50);
+      })
 });
