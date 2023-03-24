@@ -53,6 +53,7 @@ $(document).ready(function(){
         $(".nav_inner_box").css("display","block")
         let idx = $(".menu>li").index(this);
         $(".nav_box").eq(idx).css("display","block");
+        $(".nav_box").eq(idx).siblings().css("display","none");
       });
       $(".nav_inner_box").mouseleave(function(){
         $("nav").removeClass("show_nav")
