@@ -48,20 +48,17 @@ $(document).ready(function(){
     })
 
     // 메뉴 hover하면 메뉴 box나오는 것
-        $(".menu>li").mouseover(function(){
-            $("nav").addClass("show_nav");
-            $(".nav_inner_box").css("display","block")
-            let idx = $(".menu>li").index(this);
-            $(".menu>li").eq(idx).mouseover(function(){
-                $(".nav_box").eq(idx).css("display","block");
-                $(".nav_box").eq(idx).siblings().css("display","none");
-            })
-            $(".nav_box").eq(idx).mouseleave(function(){
-                $("nav").removeClass("show_nav")
-                $(".nav_inner_box").css("display","none")
-            })
-        })
-
+    $(".menu>li").mouseover(function(){
+        $("nav").addClass("show_nav");
+        $(".nav_inner_box").css("display","block")
+        let idx = $(".menu>li").index(this);
+        $(".nav_box").eq(idx).css("display","block");
+      });
+      $(".nav_inner_box").mouseleave(function(){
+        $("nav").removeClass("show_nav")
+        $(".nav_inner_box").css("display","none");
+        $(".nav_box").css("display","none");
+      });
 
 
     // 메인 화면 슬라이더 swiper 사용
@@ -260,6 +257,18 @@ $(document).ready(function(){
             disableOnInteraction: false,
         },
         loop: true,
+        navigation: {
+
+            nextEl: '.bojo_slide_next',
+    
+            prevEl: '.bojo_slide_prev',
+    
+          },
+          pagination: {
+
+            el: '.bojo_pagination',
+            type:'fraction',
+          },
       });
     //  mouseover하면 슬라이드 멈춤  
       $('.bojo_slide_inner').hover(function(){
@@ -267,6 +276,20 @@ $(document).ready(function(){
       }, function(){
         bojoslide.autoplay.start();
       });
+
+      $(".bojo_slide_stop").click(function(){
+        bojoslide.autoplay.stop();
+        $(".bojo_slide_play").css("display","block");
+        $(".bojo_slide_stop").css("display","none");
+        return false;
+    });
+
+    $(".bojo_slide_play").click(function(){
+        bojoslide.autoplay.start();
+        $(".bojo_slide_stop").css("display","block");
+        $(".bojo_slide_play").css("display","none");
+        return false;
+    });
     
       $(".bojo_slide_inner").mouseover(function(){
         let bi = $(".bojo_slide_inner").index(this)
@@ -276,4 +299,65 @@ $(document).ready(function(){
         let bi = $(".bojo_slide_inner").index(this)
         $(".bojo_slide_inner").eq(bi).children(".bojo_hover").fadeOut(50);
       })
+
+    //   보조금 24 간편찾기
+      $(".tab_list").click(function(){
+        let ti = $(this).index();
+        $(".tab_list").eq(ti).addClass("tab_active");
+        $(".tab_list").eq(ti).siblings().removeClass("tab_active");
+        $(".tab_pannel").css("display","block");
+        if($(".tab_list").eq(ti).hasClass("tab_active")){
+            $(".tab_content").eq(ti).css("display","block");
+            $(".tab_content").eq(ti).siblings().css("display","none");
+        }
+      })
+
+    // 소상공인
+      $(".radio_box2").click(function(){
+        const ids = ["a", "b", "c"];
+        const ri = $(this).index();
+        $(`#${ids[ri]}:radio`).prop("checked", true);
+    });
+
+    // 법인 라디오 버튼
+    $(".radio_box3").click(function(){
+        const iids = ["e", "f", "g"];
+        const rri = $(this).index();
+        $(`#${iids[rri]}:radio`).prop("checked", true);
+    });
+
+    // 영상으로보는 보조금 24 
+    let youtube = new Swiper ('.youtube-conainer', {
+        slidesPerView: 1,
+        speed: 500,
+        autoplay:false,
+        loop: false,
+        navigation : {
+            nextEl : '.youtube-next',
+            prevEl : '.youtube-prev', 
+        },
+        pagination: {
+
+            el: '.youtube-pagination',
+            type:'fraction',
+          },
+        
+    });
+    // 영상으로보는 보조금 24 
+    let bojobanner = new Swiper ('.bojo-banner-container', {
+        slidesPerView: 1,
+        speed: 500,
+        autoplay:true,
+        loop: true,
+        navigation : {
+            nextEl : '.youtube-next',
+            prevEl : '.youtube-prev', 
+        },
+        pagination: {
+
+            el: '.youtube-pagination',
+            type:'fraction',
+          },
+        
+    });
 });
