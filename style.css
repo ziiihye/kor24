@@ -2821,3 +2821,127 @@ footer{
     top: 0px;
     right: 0px;
 }
+/* 알림서비스 */
+.bojo-alrim{
+    margin-top: 20px;
+}
+.bojo-alrim>a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 142px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 25px 0px 25px 160px;
+    background: url(bojo/img_alarm.png) left 20px center / 126px 112px no-repeat rgb(217,227,242);
+}
+.bojo-alrim-text{
+    font-size: 18px;
+    color: rgb(34,34,34);
+    letter-spacing: -0.025em;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-style: normal;
+    line-height: 1.5;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+.bojo-alrim-link{
+    display: block;
+    position: relative;
+    margin-top: 14px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    width: 158px;
+    margin-left: 0px;
+}
+.bojo-alrim-link::before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background: url(bojo/bg_select_arrow_02\ \(10\).png) 0px 0px / auto 100% no-repeat;
+    transform: rotate(-90deg);
+}
+.bojo_bottom_inner::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 보조금 하단 아이콘 버튼 */
+.bojo_icons{
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+}
+.bojo_icons_inner{
+    margin-top: 50px;
+}
+.bojo_icons_inner>ul>li{
+    float: left;
+    width: calc((100% - 96px) / 4);
+}
+.bojo_icons_inner>ul>li + li{
+    margin-left: 32px;
+}
+.bojo_icon_link{
+    display: block;
+    padding: 34px 12px;
+    background-color: rgb(250, 245, 224);
+    text-align: center;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.bojo_icon_link_s{
+    display: inline-block;
+    padding-left: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgb(34, 34, 34);
+}
+.bojo_icon_link_a{
+    background: url(bojo/ico_s_info.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 32px;
+}
+.bojo_icon_link_b{
+    background: url(bojo/ico_s_info.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 32px;
+}
+.bojo_icon_link_c{
+    background: url(bojo/ico_s_family.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 32px;
+}
+.bojo_icon_link_d{
+    background: url(bojo/ico_s_faq.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 32px;
+}
+.bojo_icons_inner>ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.margin{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+}
